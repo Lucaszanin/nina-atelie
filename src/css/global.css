@@ -20,11 +20,12 @@
     cursor: pointer;
     position: fixed;
     color: var(--primary-color-pink);
-    font-size: 4rem;
+    width: 5rem;
     z-index: 999;
     bottom: 0;
     right: 4rem;
     transition: 100ms;
+    transform: rotateZ(45deg);
 }
 
 #back-top.show a {
