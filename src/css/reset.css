@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Pink';
+    src:url(../fonts/Pinky\ Cupid.otf);
+}
+
+@font-face {
+    font-family: 'Romantic';
+    src:url(../fonts/Picture\ of\ the\ Romantic.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-body);
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}

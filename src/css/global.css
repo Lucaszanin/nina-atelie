@@ -1,0 +1,343 @@
+:root {
+    --primary-color-dark: hsl(19, 45%, 28%);
+    --primary-color-pink: hsl(336, 45%, 70%);
+    --secondary-color-orange: hsl(25, 86%, 57%);
+    --background-contact:hsl(46, 81%, 77%);
+    --background-body:hsl(354, 22%, 91%);
+    font-size: 62.5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Pink', sans-serif;
+    color: var(--primary-color-pink);
+}
+
+.backtop a{
+    visibility: hidden;
+    cursor: pointer;
+    position: fixed;
+    color: var(--primary-color-pink);
+    font-size: 4rem;
+    z-index: 999;
+    bottom: 0;
+    right: 4rem;
+    transition: 100ms;
+}
+
+#back-top.show a {
+    visibility: visible;
+}
+
+/* *************** HEADER *************** */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 3rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.logo a {
+    font-family: 'Pink', sans-serif;
+    letter-spacing: .2rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: var(--primary-color-pink);
+    font-weight: 500;
+}
+
+header .logo {
+    transform: rotate(-5deg);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    transition: .2s ease-in-out;
+}
+
+header .menu .btn-encomenda {
+    border: 2px solid var(--primary-color-pink);
+    color: var(--primary-color-pink);
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: .2s ease-in-out;
+}
+
+header .menu .btn-encomenda:hover {
+    background-color: var(--primary-color-pink);
+    color: var(--background-contact);
+}
+
+header .menu ul li a:hover {
+    color: var(--primary-color-pink);
+}
+
+header .icon-menu {
+    color: var(--primary-color-pink);
+    font-size: 3rem;
+    display: none;
+}
+
+/* ***************  SLIDER  *************** */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    position: relative;
+}
+
+.slider .title {
+    color: #EEEEEE;
+    font-family: monospace;
+    letter-spacing: .5rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: calc(1.5rem + 1vw);
+    filter: drop-shadow(2px 3px #333);
+    opacity: 0.8;
+}
+
+.slider .img-slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(70%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.slider .img-slider.active {
+    opacity: 1;
+}
+
+.slider .img-slider.img-1 {
+    background-image: url(../assets/slider-1.jpg);
+}
+
+.slider .img-slider.img-2 {
+    background-image: url(../assets/slider-2.jpg);
+}
+
+.slider .img-slider.img-3 {
+    background-image: url(../assets/slider-3.jpg);
+}
+
+.slider .img-slider.img-4 {
+    background-image: url(../assets/slider-4.jpg);
+}
+
+
+.slider .arrow-left {
+    transform: rotateY(180deg);
+    left: 20px;
+}
+
+.slider .arrow-right {
+    right: 20px;
+}
+
+.slider .arrow {
+    background: url(../assets/arrow.png) center center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* ***************  SECTION PRODUCTS  *************** */
+
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cards {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.cards .card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-pink);
+    width: 25rem;
+    height: 22rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    font-size: 7rem;
+    box-shadow: 10px 5px 10px rgb(122, 121, 121);
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-content .icons {
+    width: 10rem;
+}
+
+.cards .card span {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    color:#EEEEEE;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+
+/* ***************  SECTION STORY *************** */
+.story {
+    margin: 15rem auto;
+    background: url(../assets/background-story.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #8d8c8c;
+    padding: 3rem;
+    min-height: 100vh;
+}
+
+.story .asset-section {
+    margin-top: 10rem;
+    width: 50rem;
+    color: var(--primary-color-pink);
+}
+
+.story p {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+    color: var(--primary-color-pink);
+    max-width: 100rem;
+}
+
+/* ***************  SECTION CONTACT *************** */
+
+.orders {
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color-pink);
+    background-color: var(--background-contact);
+    border-top-left-radius: 30rem;
+    min-height: 70vh;
+}
+
+.contact .contact-content {
+    margin-bottom: 10rem;
+    padding: 4rem;
+}
+
+.contact .contact-content .title {
+    margin-block: 2rem ;
+}
+
+.contact .contact-content p {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+}
+
+.contact .contact-content .btn {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color-pink);
+    border: 2px solid var(--primary-color-pink);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.contact .contact-content .btn:hover {
+    background-color: #FFFFFF;
+    color: var(--background-contact);
+    filter: brightness(95%);
+    border: none;
+}
+
+.contact .img-contact img{
+    margin-top: -5rem;
+    max-height: 80vh;
+}
+
+/* *************** FOOTER *************** */
+
+.footer {
+    background-color: #603813;
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40vh;
+    padding: 5rem;
+}
+
+.footer .social .social-icons{
+    font-size: 4rem;
+    margin-left: 1.5rem;
+}
+
+.footer .logo a,
+.footer .menu ul li a,
+.footer .social .social-icons,
+.footer p
+{
+    color: #EEEEEE;
+}
+
+.footer .menu ul li a:hover {
+    color: var(--primary-color-pink);
+}
+
+.footer p {
+    font-size: 2rem;
+}

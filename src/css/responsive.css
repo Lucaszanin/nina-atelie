@@ -1,0 +1,128 @@
+@media(max-width:925px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .menu {
+        margin-top: 4rem;
+    }
+
+}
+
+@media(max-width:470px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header .logo a {
+        font-size: 2.7rem;
+    }
+
+    #menu {
+        display: block;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 10rem;
+        right: 0;
+        background: var(--background-body);
+        height: 0px;
+        transition: .1s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu li {
+        padding: 3rem;
+    }
+
+    #menu li a {
+        border-bottom: 1px solid vaR(--primary-color-pink);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 2rem;
+        border-bottom: 2px solid;
+        color: var(--primary-color-pink);
+    }
+
+    #hamburguer::after,
+    #hamburguer::before{
+        content: '';
+        display: block;
+        width: 2rem;
+        height: .2rem;
+        background-color: currentColor;
+        margin-bottom: .5rem;
+        transition: .2s;
+        position: relative;
+    }
+
+    #nav.actived #hamburguer {
+        border-bottom: transparent;
+    }
+
+    #nav.actived #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -.7rem;
+    } 
+
+    #nav.actived #hamburguer::before{
+        transform: rotate(135deg);
+
+    } 
+
+    #nav.actived #menu {
+        height: calc(100vh - 10rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #products .cards {
+        margin: 3rem auto;
+    }
+
+    #products .cards .card {
+        width: 15.5rem;
+        height: 20rem;
+        max-width: 15.5rem;
+        max-height: 20rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .story {
+        margin: 3rem auto;
+    }
+
+    .footer .logo a {
+        font-size: 3rem;
+    }
+
+    .contact {
+        border-top-left-radius: 15rem;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+}
