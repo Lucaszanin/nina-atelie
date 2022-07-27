@@ -186,6 +186,7 @@ header .icon-menu {
     gap: 2rem;
     width: 100%;
     margin-top: 10rem;
+    visibility: hidden;
 }
 
 .cards .card {
@@ -243,6 +244,7 @@ header .icon-menu {
     margin-top: 10rem;
     width: 50rem;
     color: var(--primary-color-pink);
+    visibility: hidden;
 }
 
 .story p {
@@ -301,6 +303,10 @@ header .icon-menu {
     color: var(--background-contact);
     filter: brightness(95%);
     border: none;
+}
+
+.contact .img-contact{
+    visibility: hidden;
 }
 
 .contact .img-contact img{
