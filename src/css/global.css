@@ -253,7 +253,7 @@ header .icon-menu {
     text-align: justify;
     line-height: 3.5rem;
     margin-top: 3rem;
-    color: var(--primary-color-pink);
+    color: var(--primary-color-dark);
     max-width: 100rem;
 }
 
