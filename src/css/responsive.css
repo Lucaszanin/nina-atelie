@@ -13,6 +13,7 @@
 @media(max-width:470px) {
     header {
         justify-content: space-between;
+        padding: 2rem;
     }
 
     header .logo a {
