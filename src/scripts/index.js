@@ -14,13 +14,18 @@ function toggleMenu(event) {
     navMenu.classList.toggle('actived')
 }
 
-
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+function start() {
+    setInterval(() => {
+        nextImage()
+    }, time)
+}
 
 function closedMenu() {
     if (screenY <= 400) navMenu.classList.remove('actived')
 }
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 buttonTop.addEventListener('click', () => {
     window.scrollTo({
@@ -36,7 +41,6 @@ function backTheTop() {
     }
 }
 
-
 function nextImage() {
     imagemSlider[currentImageIndex].classList.remove('active')
     currentImageIndex++;
@@ -47,13 +51,8 @@ function nextImage() {
     imagemSlider[currentImageIndex].classList.add('active')
 }
 
-function start() {
-    setInterval(() => {
-        nextImage()
-    }, time)
-}
-
 arrowRight.addEventListener('click', () => {
+    window.clearTimeout(nextImage)
 
     imagemSlider[currentImageIndex].classList.remove('active')
     currentImageIndex++;
@@ -64,9 +63,7 @@ arrowRight.addEventListener('click', () => {
     imagemSlider[currentImageIndex].classList.add('active')
 });
 
-
 arrowLeft.addEventListener('click', () => {
-
     imagemSlider[currentImageIndex].classList.remove('active')
     currentImageIndex--;
 
@@ -75,7 +72,6 @@ arrowLeft.addEventListener('click', () => {
     }
     imagemSlider[currentImageIndex].classList.add('active')
 });
-
 
 window.addEventListener("load", start)
 window.addEventListener("scroll", closedMenu)
