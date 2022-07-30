@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Pink';
-    src:url(../fonts/Pinky\ Cupid.otf);
+    src: url(../fonts/Pinky\ Cupid.otf);
 }
 
 @font-face {
     font-family: 'Romantic';
-    src:url(../fonts/Picture\ of\ the\ Romantic.ttf)
+    src: url(../fonts/Picture\ of\ the\ Romantic.ttf)
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }

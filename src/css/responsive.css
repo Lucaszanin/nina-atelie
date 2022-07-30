@@ -61,7 +61,7 @@
     }
 
     #hamburguer::after,
-    #hamburguer::before{
+    #hamburguer::before {
         content: '';
         display: block;
         width: 2rem;
@@ -76,15 +76,15 @@
         border-bottom: transparent;
     }
 
-    #nav.actived #hamburguer::after{
+    #nav.actived #hamburguer::after {
         transform: rotate(-135deg);
         top: -.7rem;
-    } 
+    }
 
-    #nav.actived #hamburguer::before{
+    #nav.actived #hamburguer::before {
         transform: rotate(135deg);
 
-    } 
+    }
 
     #nav.actived #menu {
         height: calc(100vh - 10rem);

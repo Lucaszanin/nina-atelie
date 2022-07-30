@@ -1,9 +1,11 @@
+/* *************** GLOBAIS *************** */
+
 :root {
     --primary-color-dark: hsl(19, 45%, 28%);
     --primary-color-pink: hsl(336, 45%, 70%);
     --secondary-color-orange: hsl(25, 86%, 57%);
-    --background-contact:hsl(46, 81%, 77%);
-    --background-body:hsl(354, 22%, 91%);
+    --background-contact: hsl(46, 81%, 77%);
+    --background-body: hsl(354, 22%, 91%);
     font-size: 62.5%;
 }
 
@@ -15,7 +17,7 @@
     color: var(--primary-color-pink);
 }
 
-.backtop a{
+.backtop a {
     visibility: hidden;
     cursor: pointer;
     position: fixed;
@@ -181,7 +183,7 @@ header .icon-menu {
 }
 
 .cards {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -221,7 +223,7 @@ header .icon-menu {
     font-size: 2rem;
     margin-top: 2rem;
     font-weight: 700;
-    color:#EEEEEE;
+    color: #EEEEEE;
 }
 
 .card:hover {
@@ -282,7 +284,7 @@ header .icon-menu {
 }
 
 .contact .contact-content .title {
-    margin-block: 2rem ;
+    margin-block: 2rem;
 }
 
 .contact .contact-content p {
@@ -307,11 +309,11 @@ header .icon-menu {
     border: none;
 }
 
-.contact .img-contact{
+.contact .img-contact {
     visibility: hidden;
 }
 
-.contact .img-contact img{
+.contact .img-contact img {
     margin-top: -5rem;
     max-height: 80vh;
 }
@@ -329,7 +331,7 @@ header .icon-menu {
     padding: 5rem;
 }
 
-.footer .social .social-icons{
+.footer .social .social-icons {
     font-size: 4rem;
     margin-left: 1.5rem;
 }
@@ -337,8 +339,7 @@ header .icon-menu {
 .footer .logo a,
 .footer .menu ul li a,
 .footer .social .social-icons,
-.footer p
-{
+.footer p {
     color: #EEEEEE;
 }
 
