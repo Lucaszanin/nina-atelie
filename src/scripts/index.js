@@ -2,6 +2,7 @@ let time = 2000,
     currentImageIndex = 0,
     imagemSlider = document.querySelectorAll('.img-slider')
 max = imagemSlider.length;
+let timer
 
 const navMenu = document.getElementById('nav')
 const arrowLeft = document.getElementById('btn-voltar')
@@ -12,12 +13,6 @@ const buttonTop = document.querySelector('#back-top')
 function toggleMenu(event) {
     if (event.type === 'touchstart') event.preventDefault()
     navMenu.classList.toggle('actived')
-}
-
-function start() {
-    setInterval(() => {
-        nextImage()
-    }, time)
 }
 
 function closedMenu() {
@@ -51,6 +46,15 @@ function nextImage() {
     imagemSlider[currentImageIndex].classList.add('active')
 }
 
+function resetTimer() {
+    clearInterval(timer)
+    timer = setInterval(nextImage, time)
+}
+
+function start() {
+    timer = setInterval(nextImage, time)
+}
+
 arrowRight.addEventListener('click', () => {
     window.clearTimeout(nextImage)
 
@@ -61,6 +65,8 @@ arrowRight.addEventListener('click', () => {
         currentImageIndex = 0
     }
     imagemSlider[currentImageIndex].classList.add('active')
+
+    resetTimer()
 });
 
 arrowLeft.addEventListener('click', () => {
@@ -71,6 +77,8 @@ arrowLeft.addEventListener('click', () => {
         currentImageIndex = 0
     }
     imagemSlider[currentImageIndex].classList.add('active')
+
+    resetTimer()
 });
 
 window.addEventListener("load", start)
